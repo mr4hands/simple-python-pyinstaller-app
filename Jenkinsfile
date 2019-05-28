@@ -18,7 +18,7 @@ pipeline {
         }
       }
       steps {
-        sh 'py.test --verbose --junit-xml test-reports/results.xml /var/jenkins_home/workspace/simple-python-pyinstaller-app/sources/test_calc.py'
+        sh 'py.test --verbose --junit-xml /var/jenkins_home/workspace/simple-python-pyinstaller-app/test-reports/results.xml /var/jenkins_home/workspace/simple-python-pyinstaller-app/sources/test_calc.py'
       }
       post {
         always {
