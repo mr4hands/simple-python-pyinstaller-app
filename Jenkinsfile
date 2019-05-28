@@ -8,7 +8,7 @@ pipeline {
         }
       }
       steps {
-        sh 'python -m py_complie sources/add2val.py sources/calc.py'
+        sh 'python -m py_compile sources/add2val.py sources/calc.py'
       }
     }
   }
