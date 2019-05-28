@@ -8,7 +8,7 @@ pipeline {
         }
       }
       steps {
-        sh 'python -m py_compile /var/jenkins_home/workspace/simple-python-pyinstaller-app/sources/add2val.py /var/jenkins_home/workspace/simple-python-pyinstaller-app/sources/calc.py'
+        sh 'python -m py_compile /var/jenkins_home/workspace/simple-python-pyinstaller-app/sources/add2vals.py /var/jenkins_home/workspace/simple-python-pyinstaller-app/sources/calc.py'
       }
     }
   }
