@@ -8,7 +8,7 @@ pipeline {
         }
       }
       steps {
-        echo 'hello'
+        sh 'python -m py_compile sources/add2val.py sources/calc.py'
       }
     }
   }
