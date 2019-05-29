@@ -7,8 +7,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'alpine/helm:2.9.0'
-          args '-v ${pwd}:/apps'
+          image 'dtzar/helm-kubectl'
         }
       }
       steps {
